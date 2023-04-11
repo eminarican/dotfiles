@@ -1,0 +1,46 @@
+#!/bin/bash
+
+DIR="$HOME/.config/yabai/"
+START_CMD="sudo yabai --load-sa"
+
+eval "$START_CMD"
+yabai -m signal --add event="dock_did_restart" action="$START_CMD"
+
+CONFIG=(
+  mouse_follows_focus off
+  focus_follows_mouse off
+  window_origin_display default
+  window_placement second_child
+  window_topmost off
+  window_shadow off
+  window_animation_duration 0.1
+  window_opacity_duration 0.0
+  active_window_opacity 0.95
+  normal_window_opacity 0.95
+  window_opacity on
+  insert_feedback_color 0x00d75f5f
+  active_window_border_color 0x001f1f1f
+  normal_window_border_color 0x001f1f1f
+  window_border_width 1
+  window_border_radius 12
+  window_border_blur on
+  window_border_hidpi on
+  window_border on
+  split_ratio 0.50
+  split_type auto
+  auto_balance off
+  top_padding 12
+  bottom_padding 12
+  left_padding 12
+  right_padding 12
+  window_gap 06
+  mouse_modifier fn
+  mouse_action1 move
+  mouse_action2 resize
+  mouse_drop_action swap
+  external_bar all:50:0
+)
+
+yabai -m config "${CONFIG[@]}"
+yabai -m config layout bsp
+
