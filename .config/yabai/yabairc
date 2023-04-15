@@ -15,12 +15,12 @@ CONFIG=(
   window_shadow off
   window_animation_duration 0.1
   window_opacity_duration 0.0
-  active_window_opacity 0.95
-  normal_window_opacity 0.95
+  active_window_opacity 0.80
+  normal_window_opacity 0.80
   window_opacity on
   insert_feedback_color 0x00d75f5f
-  active_window_border_color 0x001f1f1f
-  normal_window_border_color 0x001f1f1f
+  active_window_border_color 0x002D4342
+  normal_window_border_color 0x002D4342
   window_border_width 1
   window_border_radius 12
   window_border_blur on

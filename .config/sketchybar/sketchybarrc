@@ -25,7 +25,7 @@ BAR_PROPS=(
   corner_radius=9
   y_offset=10
   margin=12
-  blur_radius=10
+  blur_radius=15
   notch_width=0
 )
 
